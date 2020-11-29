@@ -1,0 +1,136 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #e1e8e3;
+}
+
+nav
+{
+	height: 110px;
+	width: 100%;
+	overflow: auto;
+	background: black;
+}
+
+ul
+{
+	padding: 0;
+	margin: 0 0 0 250px;
+	list-style: none;
+}
+
+li
+{
+	float: left;
+}
+
+li a
+{
+	width: 100px;
+	display: block;
+	padding: 20px 15px;
+	text-decoration: none;
+	font-family: arial;
+	color: white;
+	text-align: center;
+	padding-top: 70px;
+}
+
+li a:hover
+{
+	background: gray;
+	text-transform: uppercase;
+}
+
+.logo img
+{
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 10px;
+	height: 110px;
+	padding-left: 40px;
+}
+.gallery
+{
+	height: 80%;
+	width: 100%;
+	display: flex;
+	margin: 5% auto 0;
+	box-sizing: border-box;
+}
+.image-box
+{
+	margin: 0 1%;
+	flex-grow: 1;
+	flex-basis: 0;
+	transition: .5s;
+}
+.image-box img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: .5s;
+	padding-bottom: 40px;
+}
+.image-box:hover
+{
+	flex-basis: 50%;
+}
+.active
+{
+	flex-basis: 50%;
+}
+.gallery:hover .active
+{
+	flex-basis: 0;
+}
+.image-box:nth-child(1):hover
+{
+	flex-basis: 50%;
+}
+#aboutme
+{
+	color: #efefef !important;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#aboutme
+{
+	text-align: center;
+	color: black !important;
+	padding-bottom: 10px;
+}
+#aboutme h1::after
+{
+	content: ' ';
+	background: #efefef;
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto 5px;
+}
+/*---aboutme---*/
+#aboutme
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#aboutme .row
+{
+	margin-top: 30px;
+}
+/*------Footer-----*/
+#footer
+{
+	background: #333;
+	color: #fff;
+	padding: 12px;
+	padding-top: 40px;
+	padding-left: 600px;
+}
+#gallery-text
+{
+	padding-left: 600px;
+}
